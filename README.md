@@ -45,6 +45,12 @@ This image shows I am unable to reach it via http.
 <img width="1912" height="872" alt="deployed-vm" src="https://github.com/user-attachments/assets/0f3f7c9a-ae4d-464f-a0ec-4f2d6a319562" />
 5. Here is an overview of the deployed VM.
 
+<img width="1904" height="855" alt="cost-budget" src="https://github.com/user-attachments/assets/c50894b9-381c-4a0e-b06b-13c3c0cc10be" />
+6. I created alerts for when cost reached 50%, 80% and 100% of monthly budget. I configured it to send an email to the Owner when the budget reached the respective percentage spend earlier mentioned. Screenshot is below.
 
-### Validation
+<img width="1415" height="866" alt="Screenshot 2025-11-13 224914" src="https://github.com/user-attachments/assets/38d46084-a689-42c9-a671-17d2a7385b63" />
+
+
+### Lessons learnt
+Azure RBAC is a nifty functionality that enhances security of az resources. To be able to control (allow or deny) access to the VM such that I allowed only ssh connections, but denied http(s) is powerful. I would imagine that there could be a situation where an organisation would want to have such a connection situation, where developers or admins are allowed to reach a VM to interact via ssh, while preventing other end-users from reaching it (usually through http or https).
 
